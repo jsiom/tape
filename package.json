@@ -1,0 +1,21 @@
+{
+  "name": "tape",
+  "version": "0.1.0",
+  "description": "Time traveler",
+  "keywords": ["virtual-dom","undo","time-machine"],
+  "dependencies": {},
+  "devDependencies": {
+    "assert": "jkroso/assert",
+    "serve": "jkroso/serve",
+    "cell": "jkroso/cell",
+    "hydro-html": "*",
+    "hydro-bdd": "*",
+    "hydro-dot": "*",
+    "hydro": "*",
+    "jsmd": "*"
+  },
+  "repository": "git://github.com/jsiom/tape.git",
+  "author": "Jake Rosoman",
+  "files": ["index.js"],
+  "license": "MIT"
+}
