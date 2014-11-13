@@ -14,7 +14,9 @@ Object.defineProperty(Tape.prototype, 'value', {
 })
 
 Tape.prototype.add = function(newState) {
-  if (!this.replacing) this.states[++this.index] = newState
+  if (this.replacing) return
+  this.states[++this.index] = newState
+  this.states.length = this.index + 1
 }
 
 Tape.prototype.replace = function(i) {

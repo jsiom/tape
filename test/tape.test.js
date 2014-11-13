@@ -35,3 +35,10 @@ it('backWhile', function(){
   tape.backWhile(function(n){ return n != 1 })
   assert(tape.value == 1)
 })
+
+it('should delete forward states when an old state is modified', function(){
+  tape.atom.set(0)
+  assert(tape.value == 0)
+  tape.forward()
+  assert(tape.value == 0)
+})
